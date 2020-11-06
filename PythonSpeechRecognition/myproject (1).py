@@ -363,7 +363,6 @@ def BASIC():
     try:
         res = client.query(query)
         results = next(res.results).text 
-        speak('WOLFRAM-ALPHA says - ')
         speak('Got it.')
         sayit(results)
         Label(n1,text="Result:").grid(row=13,column=1)
